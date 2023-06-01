@@ -2,7 +2,7 @@ import { form } from "../types/form";
 type Props = {
   onChangeValue: form.onChangeValueType;
 };
-export const DoropDownTypeB = ({ onChangeValue }: Props) => {
+export const DropDownTypeB = ({ onChangeValue }: Props) => {
   return (
     <select
       onChange={(event) =>
@@ -10,7 +10,8 @@ export const DoropDownTypeB = ({ onChangeValue }: Props) => {
           "typeBDropdown",
           (event.target.value as form.kindValueType) ?? ""
         )
-      }>
+      }
+    >
       <option value={""}>-----</option>
       <option value={"B"}>B</option>
     </select>
